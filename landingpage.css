@@ -8,13 +8,13 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f7f8fa;
+    background-color: #f9f7f7;
     color: #333;
 }
 
 /* Header */
 .header {
-    background-color:rgb(255, 255, 255);
+    background-color: black;
     border-bottom: 1px solid #e1e4e8;
     padding: 1rem 2rem;
 }
@@ -25,12 +25,13 @@ body {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #e31837;
+    color: darkgoldenrod;
     text-decoration: none;
 }
 
@@ -42,17 +43,17 @@ body {
 }
 
 .nav-links a {
-    color: #555;
+    color: #eaeaea;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #e31837;
+    color: darkgoldenrod;
 }
 
 .btn-login {
-    background-color: #e31837;
+    background-color: darkgoldenrod;
     color: #fff !important;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -72,14 +73,16 @@ body {
 }
 
 .hero-text h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
+    font-family: "Times New Roman";
 }
 
 .hero-text p {
-    font-size: 1.2rem;
-    color: #777;
+    font-size: 1.3rem;
+    color: black;
     margin-bottom: 2rem;
+    font-family: "Comic Sans MS" ;
 }
 
 .search-bar {
@@ -98,7 +101,7 @@ body {
 
 #searchBtn {
     padding: 0.75rem 1.5rem;
-    background-color: #e31837;
+    background-color: darkgoldenrod;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -107,7 +110,7 @@ body {
 }
 
 #searchBtn:hover {
-    background-color: #b3142c;
+    background-color: darkgoldenrod;
 }
 
 /* Categories Section */
@@ -116,11 +119,10 @@ body {
     text-decoration: none;
 }
 
-.event-categories h2 {
+.event-categories h1 {
     text-align: center;
     margin-bottom: 2rem;
     text-decoration: none;
-
 }
 
 .categories-grid {
@@ -131,12 +133,12 @@ body {
 }
 
 .category-item {
-    background-color: #fff;
+    background-color: black;
+    /*text-decoration: none;*/
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-
 
 }
 
@@ -150,14 +152,20 @@ body {
 .category-item h3 {
     padding: 1rem 0;
     text-decoration: none;
-
+    display: inline-block;
+    color: #B8860BFF;
 }
+
+.category-item a:hover {
+    color: #eaeaea;
+}
+
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 1.5rem;
-    background-color: #333;
+    background-color: black;
     color: #fff;
     margin-top: 2rem;
 }
