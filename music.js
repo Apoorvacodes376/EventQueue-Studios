@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const btn = document.getElementById("searchBtn");
-    const input = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
+    const searchInput = document.getElementById("searchInput");
 
-    btn.addEventListener("click", () => {
-        let q = input.value.trim();
-        if (q === "") {
-            alert("Please enter a music event to search!");
+    searchBtn.addEventListener("click", () => {
+        const text = searchInput.value.trim();
+
+        if (text === "") {
+            alert("Please enter a search keyword for artists, genres, or venues!");
         } else {
-            alert("Searching events for: " + q);
+            alert("Searching for music events related to: " + text);
         }
     });
 
