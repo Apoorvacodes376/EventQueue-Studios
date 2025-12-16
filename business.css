@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -65,17 +66,24 @@ body {
     padding: 0 1rem;
 }
 
+/* Define the primary accent color */
+:root {
+    --accent-color: darkgoldenrod;
+    --dark-background: black;
+    --light-text: #ddd;
+    --card-background: #1a1a1a; /* Darker black for card interior */
+}
 
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f7f7;
-    color: #333;
+    background-color: #f9f7f7; /* White/Light Background */
+    color: #333; /* Dark text */
 }
 
 /* Header */
 .header {
-    background-color: black;
+    background-color: var(--dark-background);
     padding: 1rem 2rem;
 }
 
@@ -86,7 +94,7 @@ body {
 }
 
 .logo {
-    color: darkgoldenrod;
+    color: var(--accent-color);
     font-size: 2rem;
     text-decoration: none;
     font-weight: bold;
@@ -104,13 +112,14 @@ body {
 }
 
 .nav-links a:hover {
-    color: darkgoldenrod;
+    color: var(--accent-color);
 }
 
 .btn-login {
-    background-color: darkgoldenrod;
+    background-color: var(--accent-color);
     padding: 8px 14px;
     border-radius: 4px;
+    color: white !important;
 }
 
 /* Main Content */
@@ -144,11 +153,15 @@ body {
 
 #searchBtn {
     padding: 10px 20px;
-    background: darkgoldenrod;
+    background: var(--accent-color);
     border: none;
     color: white;
     cursor: pointer;
     border-radius: 4px;
+}
+
+#searchBtn:hover {
+    opacity: 0.8;
 }
 
 /* Sections */
@@ -161,42 +174,42 @@ body {
     color: #222;
 }
 
-/* Sports Grid */
-.sports-grid {
+/* Business Grid */
+.business-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
-.sport-card {
-    background: black;
+.business-card {
+    background: var(--dark-background);
     padding-bottom: 1rem;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
 }
 
-.sport-card img {
+.business-card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
-.sport-card h3 {
-    color: darkgoldenrod;
+.business-card h3 {
+    color: var(--accent-color);
     margin: 10px 0;
 }
 
-.sport-card p {
+.business-card p {
     padding: 0 15px;
-    color: #ddd;
+    color: var(--light-text);
     margin-bottom: 10px;
 }
 
 .book-btn {
     display: inline-block;
     padding: 8px 16px;
-    background: darkgoldenrod;
+    background: var(--accent-color);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -208,14 +221,15 @@ body {
 
 /* Footer */
 .footer {
-    background: black;
+    background: var(--dark-background);
     color: white;
     text-align: center;
     padding: 1.2rem;
     margin-top: 3rem;
 }
+
 .event-info {
-    background: #1a1a1a;
+    background: var(--card-background);
     padding: 10px;
     margin: 10px 15px;
     border-radius: 6px;
@@ -228,154 +242,5 @@ body {
 }
 
 .event-info strong {
-    color: darkgoldenrod;
-}
-
-/* Header */
-.header {
-    background: black;
-    padding: 1rem 2rem;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: darkgoldenrod;
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-}
-
-.nav-links a {
-    color: #eaeaea;
-    text-decoration: none;
-}
-
-.btn-login {
-    background: darkgoldenrod;
-    padding: 8px 14px;
-    color: white !important;
-    border-radius: 4px;
-}
-
-/* Main content */
-.main-content {
-    max-width: 1200px;
-    margin: auto;
-    padding: 2rem 1rem;
-}
-
-.page-title {
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-/* Search bar */
-.search-bar {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 2rem;
-}
-
-#searchInput {
-    width: 60%;
-    max-width: 400px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-#searchBtn {
-    padding: 10px 20px;
-    background: darkgoldenrod;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-/* Event cards grid */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-}
-
-.product-card {
-    background: black;
-    border-radius: 10px;
-    overflow: hidden;
-    padding-bottom: 1rem;
-    text-align: center;
-}
-
-.product-card img {
-    width: 100%;
-    height: 230px;
-    object-fit: cover;
-}
-
-.product-card h3 {
-    color: darkgoldenrod;
-    margin: 10px 0;
-
-}
-
-.product-card p {
-    padding: 0 15px;
-    color: #ddd;
-    margin-bottom: 10px;
-}
-
-/* Event info box */
-.event-info {
-    background: #1a1a1a;
-    padding: 10px;
-    margin: 10px 15px;
-    border-radius: 6px;
-    text-align: left;
-}
-
-.event-info p {
-    color: #f0f0f0;
-    margin: 5px 0;
-}
-
-.event-info strong {
-    color: darkgoldenrod;
-}
-
-/* Button */
-.book-btn {
-    display: inline-block;
-    padding: 8px 16px;
-    background: darkgoldenrod;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
-.book-btn:hover {
-    opacity: 0.8;
-}
-
-/* Footer */
-.footer {
-    background: black;
-    color: white;
-    text-align: center;
-    padding: 1.2rem;
-    margin-top: 3rem;
+    color: var(--accent-color);
 }
