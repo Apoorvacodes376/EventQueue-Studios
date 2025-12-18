@@ -41,6 +41,9 @@ The project emphasizes:
 - Simple and intuitive navigation between:
   - Home / event listing page
   - Event detail pages
+  - Find events
+  - Create events
+  - Help
 
 ---
 
@@ -59,19 +62,21 @@ The project emphasizes:
 
 ##  Project Structure
 
+
 EventQueue-Studios/
 │
-├── index.html # Event listing page
-├── event.html # Event detail page
+├── index.html # Event listing (home page)
+├── event.html # Event details page
+│
 ├── css/
-│ └── style.css # Website styling
+│ └── style.css # Stylesheet
+│
 ├── js/
-│ └── script.js # JavaScript functionality
+│ └── script.js # JavaScript logic
+│
 └── assets/
-└── images/ # Event posters and images
+└── images/ # Images and posters
 
-
-*(File names and folders may vary slightly based on implementation)*
 
 ---
 
@@ -82,9 +87,11 @@ EventQueue-Studios/
    git clone https://github.com/Apoorvacodes376/EventQueue-Studios.git
    
 2. Navigate to the project directory:
-cd EventQueue-Studios
 
-3. Open index.html in any modern web browser
+    cd EventQueue-Studios
+
+
+4. Open index.html in any modern web browser
 (Optional: Use Live Server in VS Code for better navigation)
 
  Learning Outcomes
