@@ -1,31 +1,31 @@
-/* ------------------------------ */
-/* GLOBAL STYLES + HEADER         */
-/* ------------------------------ */
-
+/* Basic Reset */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f8f7f7;
-    color: #222;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f7f7;
+    color: #333;
 }
-
+/*header*/
 /* Header */
 .header {
-    background: black;
+    background-color: black;
+    border-bottom: 1px solid #e1e4e8;
     padding: 1rem 2rem;
 }
 
 .navbar {
-    max-width: 1200px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 .logo {
@@ -45,24 +45,73 @@ body {
 .nav-links a {
     color: #eaeaea;
     text-decoration: none;
-    transition: 0.3s;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover,
-.nav-links a.active {
+.nav-links a:hover {
     color: darkgoldenrod;
 }
 
 .btn-login {
-    background: darkgoldenrod !important;
+    background-color: darkgoldenrod;
+    color: #fff !important;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    color: white !important;
-}
-.btn-login:hover {
-    background: #b8860b !important;
 }
 
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f7f7;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    border-bottom: 1px solid #e1e4e8;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #eaeaea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: darkgoldenrod;
+}
+
+.btn-login {
+    background-color: darkgoldenrod;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
 /* ------------------------------ */
 /* HELP PAGE MAIN CONTAINER       */
 /* ------------------------------ */

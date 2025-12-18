@@ -1,3 +1,4 @@
+/* Basic Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +11,7 @@ body {
     background-color: #f9f7f7;
     color: #333;
 }
-
+/*header*/
 /* Header */
 .header {
     background-color: black;
@@ -58,17 +59,10 @@ body {
     border-radius: 4px;
 }
 
-/* Main Content */
-.main-content {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-}
 
-
-/* Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
     background-color: #f9f7f7;
     color: #333;
 }
@@ -76,6 +70,7 @@ body {
 /* Header */
 .header {
     background-color: black;
+    border-bottom: 1px solid #e1e4e8;
     padding: 1rem 2rem;
 }
 
@@ -83,33 +78,38 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .logo {
-    color: darkgoldenrod;
     font-size: 2rem;
-    text-decoration: none;
     font-weight: bold;
+    color: darkgoldenrod;
+    text-decoration: none;
 }
 
 .nav-links {
+    list-style: none;
     display: flex;
     gap: 1.5rem;
-    list-style: none;
+    align-items: center;
 }
 
 .nav-links a {
     color: #eaeaea;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a.active {
     color: darkgoldenrod;
 }
 
 .btn-login {
     background-color: darkgoldenrod;
-    padding: 8px 14px;
+    color: #fff !important;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
 }
 
