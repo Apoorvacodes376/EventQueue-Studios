@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     const searchBtn = document.getElementById("searchBtn");
     const searchInput = document.getElementById("searchInput");
 
@@ -7,10 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const text = searchInput.value.trim();
 
         if (text === "") {
-            alert("Please enter a search keyword for artists, genres, or venues!");
+            alert("Please enter a search keyword for sector, city, or date!");
         } else {
-            alert("Searching for music events related to: " + text);
+            // In a real application, you would implement search filtering here.
+            // For this example, we'll just show an alert.
+            alert("Searching for exhibitions related to: " + text);
         }
     });
-
 });

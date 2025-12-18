@@ -93,15 +93,14 @@ body {
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
     gap: 1.5rem;
+    list-style: none;
 }
 
 .nav-links a {
     color: #eaeaea;
     text-decoration: none;
-    transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -110,12 +109,12 @@ body {
 
 .btn-login {
     background: darkgoldenrod;
-    padding: 0.5rem 1rem;
+    padding: 8px 14px;
     border-radius: 4px;
-    color: #fff !important;
+    color: white !important;
 }
 
-/* MAIN CONTENT */
+/* MAIN */
 .main-content {
     max-width: 1200px;
     margin: 2rem auto;
@@ -125,7 +124,7 @@ body {
 .page-title {
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* SEARCH BAR */
@@ -137,90 +136,63 @@ body {
 }
 
 #searchInput {
-    padding: 0.75rem 1rem;
     width: 60%;
     max-width: 400px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #bbb;
     border-radius: 5px;
 }
 
 #searchBtn {
-    padding: 0.75rem 1.5rem;
+    padding: 10px 22px;
     background: darkgoldenrod;
-    color: white;
     border: none;
+    color: white;
     border-radius: 5px;
-    cursor: pointer;
 }
 
-#searchBtn:hover {
-    opacity: 0.9;
-}
-
-/* SECTION TITLE */
-.event-section h2 {
-    font-size: 2.3rem;
-    color: black;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    margin-top: 2rem;
-}
-
-/* MUSIC GRID */
-.music-grid {
+/* GRID */
+.fund-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
 }
 
-/* MUSIC CARD */
-.music-card {
+/* CARD */
+.fund-card {
     background: black;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    padding-bottom: 1rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.music-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
-}
-
-.music-card img {
+.fund-card img {
     width: 100%;
-    height: 260px;
+    height: 250px;
     object-fit: cover;
 }
 
-.music-card h3 {
+.fund-card h3 {
     color: darkgoldenrod;
     margin-top: 10px;
-    padding: 0 10px;
-    font-size: 1.3rem;
 }
 
-.music-card p {
+.fund-card p {
+    padding: 0 12px;
     color: #ddd;
-    padding: 0 15px;
-    margin-top: 5px;
-    font-size: 0.95rem;
-    line-height: 1.4;
 }
 
-/* EVENT INFO BOX */
+/* INFO BOX */
 .event-info {
-    background-color: #1a1a1a;
-    margin: 12px 15px;
-    padding: 12px;
+    background: #1a1a1a;
+    margin: 10px 15px;
+    padding: 10px;
     border-radius: 6px;
     text-align: left;
 }
 
 .event-info p {
     color: #eee;
-    margin-bottom: 5px;
 }
 
 .event-info strong {
@@ -230,13 +202,11 @@ body {
 /* BUTTON */
 .book-btn {
     display: inline-block;
-    margin-top: 12px;
-    padding: 10px 16px;
     background: darkgoldenrod;
+    padding: 10px 16px;
+    border-radius: 5px;
     color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.95rem;
+    margin: 10px 0;
 }
 
 .book-btn:hover {
@@ -249,5 +219,4 @@ body {
     color: white;
     text-align: center;
     padding: 1.5rem;
-    margin-top: 2.5rem;
 }
