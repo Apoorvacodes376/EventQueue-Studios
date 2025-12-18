@@ -1,39 +1,37 @@
-/* ----------------------------------- */
-/* BASE STYLES & HEADER (CONSISTENCY)  */
-/* ----------------------------------- */
+/* ------------------------------ */
+/* GLOBAL STYLES + HEADER         */
+/* ------------------------------ */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    background-color: #f7f8fa;
-    line-height: 1.6;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background: #f8f7f7;
+    color: #222;
 }
 
 /* Header */
 .header {
-    background-color: #fff;
-    border-bottom: 1px solid #e1e4e8;
+    background: black;
     padding: 1rem 2rem;
 }
 
 .navbar {
+    max-width: 1200px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #e31837; /* Confetti/Eventbrite Red */
+    color: darkgoldenrod;
     text-decoration: none;
 }
 
@@ -45,61 +43,51 @@ body {
 }
 
 .nav-links a {
-    color: #555;
+    color: #eaeaea;
     text-decoration: none;
-    transition: color 0.3s ease;
-    padding: 0.5rem 0;
+    transition: 0.3s;
 }
 
-/* Hover and Active State */
 .nav-links a:hover,
 .nav-links a.active {
-    color: #e31837;
+    color: darkgoldenrod;
 }
 
-/* Login Button Style */
 .btn-login {
-    background-color: #e31837;
-    color: #fff !important;
-    padding: 0.5rem 1rem !important;
+    background: darkgoldenrod !important;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
+    color: white !important;
 }
 .btn-login:hover {
-    background-color: #b3142c;
-    color: #fff !important;
+    background: #b8860b !important;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #333;
-    color: #fff;
-    margin-top: 40px;
-}
-
-/* ----------------------------------- */
-/* HELP PAGE CONTENT STYLES            */
-/* ----------------------------------- */
+/* ------------------------------ */
+/* HELP PAGE MAIN CONTAINER       */
+/* ------------------------------ */
 
 .help-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
     padding: 0 15px;
 }
 
-/* Hero Section */
+/* ------------------------------ */
+/* HERO SECTION                   */
+/* ------------------------------ */
+
 .hero-help {
+    background: black;
+    color: darkgoldenrod;
     text-align: center;
-    background-color: #e31837;
-    color: #fff;
-    padding: 40px 20px;
-    border-radius: 8px;
+    padding: 50px 20px;
+    border-radius: 10px;
     margin-bottom: 40px;
 }
 
 .hero-help h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
 }
 
@@ -108,89 +96,106 @@ body {
     justify-content: center;
     gap: 10px;
     max-width: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #helpSearchInput {
-    padding: 10px 15px;
+    padding: 12px 15px;
     width: 100%;
-    border: none;
     border-radius: 4px;
+    border: none;
     font-size: 1rem;
 }
 
 #helpSearchBtn {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    padding: 12px 25px;
+    background: darkgoldenrod;
+    color: black;
+    font-weight: bold;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 #helpSearchBtn:hover {
-    background-color: #555;
+    background: #b8860b;
 }
 
-/* FAQ Section */
+/* ------------------------------ */
+/* FAQ SECTION                    */
+/* ------------------------------ */
+
 .faq-section h2 {
-    margin-bottom: 20px;
     text-align: center;
-    color: #e31837;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 25px;
 }
 
+/* FAQ Card */
 .faq-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    background: black;
+    border-radius: 8px;
+    margin-bottom: 15px;
     overflow: hidden;
+    border: 1px solid darkgoldenrod;
 }
 
+/* Question Header */
 .faq-question {
     width: 100%;
-    display: block;
-    background-color: #fff;
-    color: #333;
-    padding: 15px;
+    background: black;
+    color: darkgoldenrod;
+    padding: 18px;
     text-align: left;
     border: none;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: 600;
-    transition: background-color 0.2s;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .faq-question:hover {
-    background-color: #f7f8fa;
+    background: #1a1a1a;
 }
 
-/* Indicator for open/closed state (optional: using a CSS transform here) */
+/* Plus / Minus Icon */
 .faq-question::after {
-    content: '+';
+    content: "+";
     float: right;
+    font-size: 1.4rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    color: #e31837;
-    transition: transform 0.2s;
 }
 
 .faq-question.active::after {
-    content: '-';
-    transform: rotate(180deg);
+    content: "-";
 }
 
+/* Answer Content */
 .faq-answer {
-    padding: 0 15px;
-    background-color: #fcfcfc;
-    max-height: 0; /* Key for the collapsible effect */
+    max-height: 0;
     overflow: hidden;
+    background:white;
+    color: black;
+    padding: 0 18px;
     transition: max-height 0.3s ease-out;
 }
 
 .faq-answer p {
-    padding: 15px 0;
-    font-size: 0.95rem;
-    color: #555;
+    padding: 18px 0;
+    font-size: 1rem;
+    color: black;
+}
+
+/* ------------------------------ */
+/* FOOTER                         */
+/* ------------------------------ */
+
+.footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 40px;
 }

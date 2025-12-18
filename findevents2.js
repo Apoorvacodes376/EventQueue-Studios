@@ -42,9 +42,8 @@ const events = [
     { name: "Street Food Carnival", date: "2026-08-14", category: "Food", img: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60", location: "Hyderabad" },
     { name: "Coffee Brewing Masterclass", date: "2026-09-02", category: "Food", img: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60", location: "Delhi" },
     { name: "Chocolate Making Workshop", date: "2026-10-18", category: "Food", img: "https://images.unsplash.com/photo-1548907040-4baa42d10919?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60", location: "Chennai" },
-    { name: "Seafood Sunday Brunch", date: "2026-11-15", category: "Food", img: "https://images.unsplash.com/photo-1551248429-4221d683a697?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60", location: "Chennai" },
+       
     // ----- FUNDRAISING -----
-    { name: "Cancer Charity Marathon", date: "2026-03-10", category: "Fundraising", img: "https://img.freepik.com/free-photo/group-people-cancer-awareness-marathon_23-2148604521.jpg", location: "Chennai" },
     { 
     name: "Cancer Charity Marathon", 
     date: "2026-03-10", 
@@ -103,7 +102,6 @@ const events = [
   },
     // ----- PRODUCT LAUNCH -----
     { name: "NovaX Pro Smartphone Launch", date: "2026-03-10", category: "Product", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4djMaXVEFGffpNOu4Q_jCwPwPf0oF0J7fbw&s", location: "Bangalore" },
-{ name: "NovaX Pro Smartphone Launch", date: "2026-03-10", category: "Product", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4djMaXVEFGffpNOu4Q_jCwPwPf0oF0J7fbw&s", location: "Bangalore" },
     { name: "Luxora Electric Car Global Launch", date: "2026-03-25", category: "Product", img: "https://www.rushlane.com/wp-content/uploads/2024/11/mahindra-be-6e-official-photos-18.jpg", location: "Chennai" },
     { name: "FutureTech Gadget Expo 2025", date: "2026-04-02", category: "Product", img: "https://audaces.com/wp-content/uploads/2025/04/what-is-wearable-tech.webp", location: "Hyderabad" },
     { name: "SmartLiving Home Automation Launch", date: "2026-04-18", category: "Product", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH8RfBc3B1KYKqGzeALckC8vPIUO_JXZRCow&s", location: "Chennai" },
@@ -112,7 +110,6 @@ const events = [
     { name: "HyperVision X – VR Gaming Console Launch", date: "2026-06-05", category: "Product", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb6lvocauj-OSfkb8TrfF1Gtn_MQggdzJ-Ww&s", location: "Bangalore" },
     { name: "VoltRide X1 – Electric Bike Official Launch", date: "2026-06-21", category: "Product", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mtFBLBO-kmdsoh0-fSkHsiTNy5eKHsztpw&s", location: "Chennai" },
     // ----- SPORTS -----
-    { name: "International Football Championship", date: "2026-03-12", category: "Sports", img: "https://www.playspots.in/wp-content/uploads/2021/03/yS0YQ5MYLH.jpg", location: "Chennai" },
     { name: "International Football Championship", date: "2026-03-12", category: "Sports", img: "https://www.playspots.in/wp-content/uploads/2021/03/yS0YQ5MYLH.jpg", location: "Chennai" },
     { name: "India vs Australia – ODI Series", date: "2026-04-28", category: "Sports", img: "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_lg_2x/f_auto/primary/ugvcvyuorglkafijaz4x", location: "Chennai" },
     { name: "NBA Pre-Season Games", date: "2026-07-10", category: "Sports", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNUk6aCZC9MQZNLk6XzB-iIlOuQ-mSPUKhXQ&s", location: "Chennai" },
