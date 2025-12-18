@@ -63,19 +63,19 @@ The project emphasizes:
 ##  Project Structure
 
 
-EventQueue-Studios/
-│
-├── index.html # Event listing (home page)
-├── event.html # Event details page
-│
-├── css/
-│ └── style.css # Stylesheet
-│
-├── js/
-│ └── script.js # JavaScript logic
-│
-└── assets/
-└── images/ # Images and posters
+    EventQueue-Studios/
+    │
+    ├── index.html # Event listing (home page)
+    ├── event.html # Event details page
+    │
+    ├── css/
+    │ └── style.css # Stylesheet
+    │
+    ├── js/
+    │ └── script.js # JavaScript logic
+    │
+    └── assets/
+    └── images/ # Images and posters
 
 
 ---
@@ -88,7 +88,7 @@ EventQueue-Studios/
    
 2. Navigate to the project directory:
 
-    cd EventQueue-Studios
+        cd EventQueue-Studios
 
 
 4. Open index.html in any modern web browser
